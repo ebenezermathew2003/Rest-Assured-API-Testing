@@ -5,7 +5,7 @@
     <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="RestAssuredAPITesting"/>
     <stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.m2e.launchconfig.sourcepathProvider"/>
     <mapAttribute key="org.testng.eclipse.ALL_CLASS_METHODS">
-        <mapEntry key="restassured_day1.Httpresquest" value="getUsers;createuser;updateuser;deleteuser"/>
+        <mapEntry key="restassured_day1.Httpresquest" value="createuser;updateuser;getUsers;deleteuser"/>
     </mapAttribute>
     <listAttribute key="org.testng.eclipse.CLASS_TEST_LIST">
         <listEntry value="restassured_day1.Httpresquest"/>

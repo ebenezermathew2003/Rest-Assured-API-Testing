@@ -1,0 +1,5 @@
+package restassured_day2;
+
+public class WaysToCreatePostRequest {
+
+}

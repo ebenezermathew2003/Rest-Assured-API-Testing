@@ -7,9 +7,6 @@ import static org.hamcrest.Matchers.equalTo;
 import java.util.HashMap;
 
 import org.testng.annotations.Test;
-
-
-
 /*
  * given()
  * content type,set,cookies,add auth,add param,set headers info etc

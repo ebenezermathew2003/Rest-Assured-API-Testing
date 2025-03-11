@@ -1,0 +1,19 @@
+package restassured_day2;
+import static io.restassured.RestAssured.given;
+
+import org.testng.annotations.Test;
+
+public class CookiesandHeaders {
+	@Test
+	void testcookie()
+	{
+		given()
+		
+		.when()
+			.get("https://www.google.com/")
+			
+		.then()
+			.log().all();
+	}
+
+}

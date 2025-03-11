@@ -1,0 +1,19 @@
+package restassured_day2;
+import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.when;
+import static org.hamcrest.Matchers.equalTo;
+import java.util.HashMap;
+
+import org.testng.annotations.Test;
+/*
+ Different Ways to create POSt request body
+ 1)Post request body using HsahMap
+ 2)Post request body creation using Org.JSON
+ 3)Post request body creation using POJO class
+ 4)Post request using external json file data 
+ */
+
+public class WaysToCreatePostRequest {
+	//1)By using HashMap Post Request
+
+}

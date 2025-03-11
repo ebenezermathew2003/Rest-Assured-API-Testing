@@ -1,0 +1,55 @@
+package restassured_day2;
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.testng.annotations.Test;
+/*
+ Different Ways to create POSt request body
+ 1)Post request body using HsahMap
+ 2)Post request body creation using Org.JSON
+ 3)Post request body creation using POJO class
+ 4)Post request using external json file data 
+ */
+
+public class WaysToCreatePostRequest {
+	//1)By using HashMap Post Request
+	@Test
+	public void postusinghashmap()
+	{
+		Map<String, Object> studentData = new HashMap<String, Object>();
+        studentData.put("USN", "4AL21CS005");
+        studentData.put("name", "Ebenezer Mathew");
+        studentData.put("gender", "Male");
+        studentData.put("semester", 8); 
+
+        // Creating a list of courses
+        List<Map<String, Object>> courses = new ArrayList<Map<String, Object>>();
+
+        Map<String, Object> course1 = new HashMap<String, Object>();
+        course1.put("course_no", "CS101");
+        course1.put("course_name", "Database");
+        course1.put("duration", "3 months");
+        course1.put("fees", 5800); 
+
+        courses.add(course1);
+
+        // Adding courses to student data
+        studentData.put("courses", courses);
+
+       
+        given()
+            .contentType("application/json")
+            .body(studentData)
+        .when()
+            .post("http://localhost:3000/students")
+        .then()
+            .statusCode(201)
+            .body("name", equalTo("Ebenezer Mathew"))
+            .body("semester", equalTo(8));
+    }
+}

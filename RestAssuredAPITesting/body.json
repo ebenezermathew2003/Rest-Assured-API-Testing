@@ -1,0 +1,18 @@
+{
+    "USN": "4AL21CS002",
+    "name": "Bob Smith",
+    "gender": "Male",
+    "semester": 6,
+    "courses": [
+      {
+        "course_no": "CS201",
+        "course_name": "Operating Systems",
+        "duration": "4 months",
+        "fees": 6000
+      },
+      {
+        "course_no": "CS202",
+        "course_name": "Computer Networks",
+        "duration": "4 months",
+        "fees": 5800
+      }

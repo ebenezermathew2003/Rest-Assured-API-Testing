@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-10T16:02:54 IST" name="Default suite" finished-at="2025-03-10T16:02:59 IST" duration-ms="4237">
+  <suite started-at="2025-03-11T17:42:04 IST" name="Default suite" finished-at="2025-03-11T17:42:08 IST" duration-ms="3931">
     <groups>
     </groups>
-    <test started-at="2025-03-10T16:02:54 IST" name="Default test" finished-at="2025-03-10T16:02:59 IST" duration-ms="4237">
-      <class name="restassured_day1.Httpresquest">
-        <test-method signature="getUsers()[pri:0, instance:restassured_day1.Httpresquest@7b36aa0c]" started-at="2025-03-10T16:02:55 IST" name="getUsers" finished-at="2025-03-10T16:02:57 IST" duration-ms="2554" status="PASS">
+    <test started-at="2025-03-11T17:42:04 IST" name="Default test" finished-at="2025-03-11T17:42:08 IST" duration-ms="3931">
+      <class name="restassured_day2.Headersdemo1">
+        <test-method signature="getheaders()[pri:0, instance:restassured_day2.Headersdemo1@4a883b15]" started-at="2025-03-11T17:42:04 IST" name="getheaders" finished-at="2025-03-11T17:42:07 IST" duration-ms="2787" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getUsers -->
-        <test-method signature="createuser()[pri:1, instance:restassured_day1.Httpresquest@7b36aa0c]" started-at="2025-03-10T16:02:57 IST" name="createuser" finished-at="2025-03-10T16:02:58 IST" duration-ms="812" status="PASS">
+        </test-method> <!-- getheaders -->
+        <test-method signature="testheadres()[pri:0, instance:restassured_day2.Headersdemo1@4a883b15]" started-at="2025-03-11T17:42:07 IST" name="testheadres" finished-at="2025-03-11T17:42:08 IST" duration-ms="1048" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createuser -->
-        <test-method signature="updateuser()[pri:2, instance:restassured_day1.Httpresquest@7b36aa0c]" started-at="2025-03-10T16:02:58 IST" name="updateuser" finished-at="2025-03-10T16:02:58 IST" depends-on-methods="restassured_day1.Httpresquest.createuser" duration-ms="416" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateuser -->
-        <test-method signature="deleteuser()[pri:3, instance:restassured_day1.Httpresquest@7b36aa0c]" started-at="2025-03-10T16:02:58 IST" name="deleteuser" finished-at="2025-03-10T16:02:59 IST" duration-ms="383" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteuser -->
-      </class> <!-- restassured_day1.Httpresquest -->
+        </test-method> <!-- testheadres -->
+      </class> <!-- restassured_day2.Headersdemo1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

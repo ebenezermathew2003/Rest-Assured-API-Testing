@@ -1,0 +1,29 @@
+package restassured_day2;
+import static io.restassured.RestAssured.given;
+
+import java.util.Map;
+import java.util.Set;
+
+import org.testng.annotations.Test;
+
+import io.restassured.response.Response;
+
+public class Headersdemo1 {
+	@Test
+		void testheadres()
+		{
+			given()
+			
+			.when()
+				.get("https://www.google.com/")
+				
+			.then()
+				.header("Content-Type","text/html; charset=ISO-8859-1")
+				.and()
+				.header("Content-Encoding","gzip");
+		}
+		
+		
+
+
+}

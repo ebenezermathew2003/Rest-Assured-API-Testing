@@ -1,0 +1,11 @@
+package restassured_day2;
+
+public class POJO_Request {
+	String usn;
+	String name;
+	String gender;
+	int semester;
+	String courses[][];
+	
+
+}
