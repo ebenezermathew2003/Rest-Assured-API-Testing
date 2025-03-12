@@ -1,0 +1,6 @@
+package restassured_day3;
+//Pojo---->serilization--->JSON Object----->Deserilization----->Pojo
+
+public class Serilization_Deserilization {
+
+}

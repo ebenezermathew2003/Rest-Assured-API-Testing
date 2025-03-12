@@ -1,0 +1,12 @@
+package restassured_day3;
+
+import org.testng.annotations.Test;
+
+public class JsonSchemaValidation {
+	@Test
+	void jsonschemavalidate()
+	{
+		
+	}
+
+}

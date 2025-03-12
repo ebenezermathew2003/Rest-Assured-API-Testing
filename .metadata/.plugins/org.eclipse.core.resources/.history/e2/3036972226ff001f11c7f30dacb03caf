@@ -1,0 +1,41 @@
+package restassured_day3;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.when;
+import static org.hamcrest.Matchers.equalTo;
+import org.testng.annotations.Test;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import restassured_day2.POJO_Request;
+//Pojo---->serilization--->JSON Object----->Deserilization----->Pojo
+public class Serilization_Deserilization {
+	@Test
+	void convertPojotoJson() throws JsonProcessingException
+	{
+		POJO_Request data=new POJO_Request();
+		data.setUsn("4AL21CS037");
+		data.setName("Deepak");
+		data.setGender("Male");
+		data.setSemester(8);
+        ArrayList<Map<String, Object>> courses = new ArrayList<Map<String, Object>>();
+
+        Map<String, Object> course1 = new HashMap<String, Object>();
+        course1.put("course_no", "CS101");
+        course1.put("course_name", "Database");
+        course1.put("duration", "3 months");
+        course1.put("fees", 5800); 
+        
+        courses.add(course1);
+        data.setCourses(courses);
+        
+        //convert Java Object to the Json Object
+        ObjectMapper objmapper=new ObjectMapper();
+        String jsondata=objmapper.writerWithDefaultPrettyPrinter().writeValueAsString(objmapper);
+        System.out.println(jsondata);
+	}
+
+}

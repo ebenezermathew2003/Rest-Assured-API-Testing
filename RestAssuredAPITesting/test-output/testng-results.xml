@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-12T12:19:06 IST" name="Default suite" finished-at="2025-03-12T12:19:08 IST" duration-ms="1617">
+  <suite started-at="2025-03-12T15:29:44 IST" name="Default suite" finished-at="2025-03-12T15:29:45 IST" duration-ms="428">
     <groups>
     </groups>
-    <test started-at="2025-03-12T12:19:06 IST" name="Default test" finished-at="2025-03-12T12:19:08 IST" duration-ms="1617">
-      <class name="restassured_day3.ParsingJsonResponseData">
-        <test-method signature="testjsonresponse1()[pri:1, instance:restassured_day3.ParsingJsonResponseData@4a883b15]" started-at="2025-03-12T12:19:06 IST" name="testjsonresponse1" finished-at="2025-03-12T12:19:08 IST" duration-ms="1529" status="PASS">
+    <test started-at="2025-03-12T15:29:44 IST" name="Default test" finished-at="2025-03-12T15:29:45 IST" duration-ms="428">
+      <class name="restassured_day3.Serilization_Deserilization">
+        <test-method signature="convertPojotoJson()[pri:0, instance:restassured_day3.Serilization_Deserilization@4686afc2]" started-at="2025-03-12T15:29:44 IST" name="convertPojotoJson" finished-at="2025-03-12T15:29:45 IST" duration-ms="283" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testjsonresponse1 -->
-      </class> <!-- restassured_day3.ParsingJsonResponseData -->
+        </test-method> <!-- convertPojotoJson -->
+        <test-method signature="convertJsontoPojo()[pri:1, instance:restassured_day3.Serilization_Deserilization@4686afc2]" started-at="2025-03-12T15:29:45 IST" name="convertJsontoPojo" finished-at="2025-03-12T15:29:45 IST" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- convertJsontoPojo -->
+      </class> <!-- restassured_day3.Serilization_Deserilization -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -9,4 +9,8 @@
     <fullyQualifiedTypeName name="io.restassured.response.Response"/>
     <fullyQualifiedTypeName name="io.restassured.http.ContentType"/>
     <fullyQualifiedTypeName name="org.testng.Assert"/>
+    <fullyQualifiedTypeName name="restassured_day3.JsonSchemaValidation"/>
+    <fullyQualifiedTypeName name="io.restassured.matcher.RestAssuredMatchers"/>
+    <fullyQualifiedTypeName name="io.restassured.module.jsv.JsonSchemaValidator"/>
+    <fullyQualifiedTypeName name="com.fasterxml.jackson.databind.ObjectMapper"/>
 </qualifiedTypeNameHistroy>
