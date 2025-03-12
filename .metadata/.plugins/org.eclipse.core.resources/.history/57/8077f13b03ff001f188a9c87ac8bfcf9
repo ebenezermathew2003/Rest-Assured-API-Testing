@@ -1,0 +1,25 @@
+package restassured_day3;
+import org.testng.annotations.Test;
+import static io.restassured.RestAssured.given;
+import static io.restassured.RestAssured.when;
+import static org.hamcrest.Matchers.equalTo;
+
+public class ParsingJsonResponseData {
+	@Test(priority = 1)
+	void testjsonresponses()
+	{
+		//1st Approach
+		given()
+			.contentType("ContentType.JSON")
+			
+		.when()
+			.get("http://localhost:3000/store")
+		
+		.then()
+			.statusCode(200)
+			.header("Content-Type","application/json")
+			.body("book[3].title",equalTo("Pride and Prejudice"))
+			.log().headers();
+	}
+
+}

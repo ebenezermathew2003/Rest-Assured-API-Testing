@@ -1,0 +1,48 @@
+package restassured_day3;
+import static io.restassured.RestAssured.given;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import io.restassured.response.Response;
+
+public class ParsingJsonResponseData {
+	//@Test(priority = 1)
+//	void testjsonresponses()
+//	{
+//		//1st Approach
+//		given()
+//			.contentType("ContentType.JSON")
+//			
+//		.when()
+//			.get("http://localhost:3000/store")
+//		
+//		.then()
+//			.statusCode(200)
+//			.header("Content-Type","application/json")
+//			.body("book[3].title",equalTo("Pride and Prejudice"))
+//			.log().headers();
+//		
+//		
+//		
+//		
+//	} 
+	@Test(priority = 2)
+	void testjsonresponse()
+	{
+		//2nd Approach
+		Response res=given()
+			.body("ContentType.JSON")
+			
+		.when()
+			.get("http://localhost:3000/store");
+		
+		Assert.assertEquals(res.header("Content-Type"),"application/json");
+		Assert.assertEquals(res.getStatusCode(),200);
+		
+		String book=res.jsonPath().get("book[2].title").toString();
+		Assert.assertEquals(book,"Moby Dick");
+		
+	}
+
+}

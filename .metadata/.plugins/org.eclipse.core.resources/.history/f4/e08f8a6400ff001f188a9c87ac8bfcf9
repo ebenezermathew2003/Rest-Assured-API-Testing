@@ -1,0 +1,5 @@
+package restassured_day3;
+
+public class ParsingJsonResponseData {
+
+}
